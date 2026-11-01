@@ -12,6 +12,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btnConnect, btnCut;
     private EditText etWidth, etHeight, etName;
 
+    // Ungaloda exact Cutter Bluetooth details
+    private static final String CUTTER_NAME = "CUTTER_F9BD";
+    private static final String CUTTER_MAC = "00:16:A6:04:50:B5";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnConnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.java_this, "Connecting to CUTTER_F9BD (00:16:A6:04:50:B5)...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Connecting to " + CUTTER_NAME + " (" + CUTTER_MAC + ")...", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -38,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 if(w.isEmpty() || h.isEmpty()) {
                     Toast.makeText(MainActivity.this, "Please enter Width & Height!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(MainActivity.this, "Sending Cut Command: " + w + "x" + h + "mm", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Sending Cut Command: " + w + "x" + h + "mm to " + CUTTER_NAME, Toast.LENGTH_LONG).show();
                 }
             }
         });
