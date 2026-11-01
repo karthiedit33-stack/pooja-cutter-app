@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
+    android:padding="20dp"
     android:gravity="center_horizontal">
 
     <TextView
@@ -12,44 +12,43 @@
         android:text="Pooja Mobiles - Custom Cutter"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="20dp"/>
 
     <Button
         android:id="@+id/btnConnect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Connect Bluetooth Cutter"
-        android:layout_marginBottom="16dp"/>
+        android:text="CONNECT BLUETOOTH CUTTER"
+        android:layout_marginBottom="20dp"/>
 
     <EditText
-        android:id="@+id/txtWidth"
+        android:id="@+id/etWidth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Width (in mm, e.g., 70)"
-        android:inputType="numberDecimal"
-        android:layout_marginBottom="12dp"/>
+        android:inputType="number"
+        android:layout_marginBottom="10dp"/>
 
     <EditText
-        android:id="@+id/txtHeight"
-        android:layout_height="wrap_content"
+        android:id="@+id/etHeight"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Height (in mm, e.g., 150)"
-        android:inputType="numberDecimal"
-        android:layout_marginBottom="12dp"/>
+        android:inputType="number"
+        android:layout_marginBottom="10dp"/>
 
     <EditText
-        android:id="@+id/txtText"
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Custom Text / Name"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="20dp"/>
 
     <Button
         android:id="@+id/btnCut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Custom Cut"
-        android:backgroundTint="#4CAF50"
-        android:textColor="#FFFFFF"/>
+        android:text="START CUSTOM CUT"
+        android:backgroundTint="#00C853"/>
 
 </LinearLayout>
